@@ -37,7 +37,7 @@
 <meta property="og:description" content="一些基于Chirpy主题的个性化设置" />
 <link rel="canonical" href="http://localhost:4000/posts/customize-my-blog/" />
 <meta property="og:url" content="http://localhost:4000/posts/customize-my-blog/" />
-<meta property="og:site_name" content="N・H・K にようこそ！" />
+<meta property="og:site_name" content="去以六月息者也" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-04-22T16:45:00+08:00" />
 <meta name="twitter:card" content="summary" />
@@ -45,11 +45,11 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@MsEspeon" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"MsEspeon","url":"https://github.com/ittousei/"},"dateModified":"2024-04-22T23:26:44+08:00","datePublished":"2024-04-22T16:45:00+08:00","description":"一些基于Chirpy主题的个性化设置","headline":"Chirpy主题的进阶使用","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/customize-my-blog/"},"url":"http://localhost:4000/posts/customize-my-blog/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"MsEspeon","url":"https://github.com/ittousei/"},"dateModified":"2024-05-01T00:04:13+08:00","datePublished":"2024-04-22T16:45:00+08:00","description":"一些基于Chirpy主题的个性化设置","headline":"Chirpy主题的进阶使用","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/customize-my-blog/"},"url":"http://localhost:4000/posts/customize-my-blog/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Chirpy主题的进阶使用 | N・H・K にようこそ！
+  <title>Chirpy主题的进阶使用 | 去以六月息者也
   </title>
 
   <!--
@@ -66,8 +66,8 @@
   <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
 
 <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
-<meta name="apple-mobile-web-app-title" content="N・H・K にようこそ！">
-<meta name="application-name" content="N・H・K にようこそ！">
+<meta name="apple-mobile-web-app-title" content="去以六月息者也">
+<meta name="application-name" content="去以六月息者也">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
@@ -280,7 +280,7 @@
     <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">N・H・K にようこそ！</a>
+      <a href="/">去以六月息者也</a>
     </h1>
     <p class="site-subtitle mb-0">MsEspeon@随便写写</p>
   </header>
@@ -872,13 +872,13 @@
 
 <time
   
-  data-ts="1713799604"
+  data-ts="1714493053"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 22, 2024
+  May  1, 2024
 </time>
 
         </span>
@@ -928,7 +928,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="2285 words"
+  title="2276 words"
 >
   <em>12 min</em> read</span>
 
@@ -1002,7 +1002,7 @@
 
 <h3 id="创建和删除子页面"><span class="me-2">创建和删除子页面</span><a href="#创建和删除子页面" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>现在，我希望在个人网站上创建一个留言板，放在网站子页<code class="language-plaintext highlighter-rouge">/treehole/</code>下。我们可以向<code class="language-plaintext highlighter-rouge">_tabs</code>目录添加模版文件<code class="language-plaintext highlighter-rouge">_tabs/treehole.md</code>来实现这一需求。</p>
+<p>例如我希望在个人网站上创建一个留言板，放在网站子页<code class="language-plaintext highlighter-rouge">/treehole/</code>下。我们可以向<code class="language-plaintext highlighter-rouge">_tabs</code>目录添加模版文件<code class="language-plaintext highlighter-rouge">_tabs/treehole.md</code>来实现这一需求。</p>
 
 <div class="language-md highlighter-rouge"><div class="code-header">
         <span data-label-text="Markdown"><i class="fas fa-code fa-fw small"></i></span>
@@ -1018,7 +1018,7 @@
 <span class="nn">---</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>这样，网站会自动生成子页面<code class="language-plaintext highlighter-rouge">/treehole/</code>，并读取<code class="language-plaintext highlighter-rouge">_layouts/treehole.html</code>作为该页面的模版，我们可以在模版文件<code class="language-plaintext highlighter-rouge">treehole.html</code>中写入自己想要的模块，给网页添加新的功能。以下是html模版的一个简单示例（没有添加任何模块，只是输出‘Hello, world!’）：</p>
+<p>网站会自动生成子页面<code class="language-plaintext highlighter-rouge">/treehole/</code>，并读取<code class="language-plaintext highlighter-rouge">_layouts/treehole.html</code>作为该页面的模版，我们可以在模版文件<code class="language-plaintext highlighter-rouge">treehole.html</code>中写入自己想要的模块，给网页添加新的功能。以下是html模版的一个简单示例（没有添加任何模块，只是输出‘Hello, world!’）：</p>
 
 <div class="language-html highlighter-rouge"><div class="code-header">
         <span data-label-text="HTML"><i class="fas fa-code fa-fw small"></i></span>
@@ -1036,7 +1036,7 @@ layout: page
 <span class="nt">&lt;p&gt;</span>Hello, world!<span class="nt">&lt;/p&gt;</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>同样的，如果想要删除某个子页面，比如标签页<code class="language-plaintext highlighter-rouge">/tags/</code>（因为我讨厌打标签），只需删除对应的模版文件<code class="language-plaintext highlighter-rouge">_tabs/tags.md</code>。</p>
+<p>同样如果想要删除某个子页面，比如标签页<code class="language-plaintext highlighter-rouge">/tags/</code>（因为我讨厌打标签），只需删除对应的模版文件<code class="language-plaintext highlighter-rouge">_tabs/tags.md</code>。</p>
 
 <h2 id="优化文本搜索"><span class="me-2">优化文本搜索</span><a href="#优化文本搜索" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
@@ -1074,7 +1074,7 @@ layout: page
 </span><span class="p">}</span><span class="w">
 </span></pre></td></tr></tbody></table></code></div></div>
 
-<p>这样一来，要在博客的文章中检索关键词，不用到每个文章的html页面一一查找，只需遍历一遍json文件即可。虽然实现思路很好，但实际写出来的代码却是一言难尽，而且原项目在2022年3月就停止维护了，你甚至找不到作者提修改建议。</p>
+<p>这样一来，要在博客的文章中检索关键词，不用到每个文章的html页面一一查找，只需遍历一遍json文件即可。虽然实现思路很好，但成品代码却一言难尽，而且原项目在2022年3月就停止维护了，也没法向作者提修改建议。</p>
 
 <h3 id="精准搜索"><span class="me-2">精准搜索</span><a href="#精准搜索" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
@@ -1084,20 +1084,20 @@ layout: page
 <mark style="background-color: rgba(255, 255, 153, 0.5);">Let</mark>'s take a photo here. I'll print <mark style="background-color: rgba(255, 255, 153, 0.5);">it</mark> on my shirt and <mark style="background-color: rgba(255, 255, 153, 0.5);">go</mark> to school.
 </center>
 
-<p>这显然是不合理的，我希望这三个单词作为一个整体在句中出现，而不是去分别检索三个单词：</p>
+<p>这显然是不合理的，我希望三个单词作为一个整体在句中出现，而不是去分别检索三个单词：</p>
 
 <center>
 <mark style="background-color: rgba(255, 255, 153, 0.5);">Let it go</mark>, since tomorrow is another day.
 </center>
 
-<p>经过阅读相关讨论，我发现文本的精准匹配这个问题，实际上已经被作者修复了：</p>
+<p>查阅相关讨论，我发现文本的精准匹配这个问题，实际上已经被作者修复了：</p>
 
 <ul>
   <li><a href="https://github.com/christian-fei/Simple-Jekyll-Search/issues/182">Simple-Jekyll-Search/issues/182</a></li>
   <li><a href="https://github.com/christian-fei/Simple-Jekyll-Search/pull/166">Simple-Jekyll-Search/pull/166</a></li>
 </ul>
 
-<p>既然这个问题已经被解决了，为什么搜索结果还是那么奇怪呢？仔细阅读<a href="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/">项目代码</a>，会发现非常坑的一点，作者虽然在源文件<code class="language-plaintext highlighter-rouge">/src/</code>更新了代码，却没有在<code class="language-plaintext highlighter-rouge">/dest/</code>重新编译项目。</p>
+<p>既然问题已经解决了，为什么搜索结果还是那么奇怪呢？仔细阅读<a href="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/">项目代码</a>，会发现非常坑的一点，作者虽然在源目录<code class="language-plaintext highlighter-rouge">/src/</code>更新了代码，却没有在终目录<code class="language-plaintext highlighter-rouge">/dest/</code>重新编译项目。</p>
 
 <ul>
   <li>Q：bug修了吗？ <br />
@@ -1109,7 +1109,7 @@ A：如修</li>
 <p>因此，我们需要重新编写搜索算法，并替换掉原先失效的算法库。具体步骤如下：</p>
 
 <ul>
-  <li>在<code class="language-plaintext highlighter-rouge">/assets/lib/simple-jekyll-search/simple-jekyll-search.js</code>中重写了精确匹配的搜索算法；</li>
+  <li>在<code class="language-plaintext highlighter-rouge">assets/lib/simple-jekyll-search/simple-jekyll-search.js</code>中重写精确匹配的搜索算法；</li>
 </ul>
 
 <div class="language-js highlighter-rouge"><div class="code-header">
@@ -1135,7 +1135,7 @@ A：如修</li>
 </pre></td></tr></tbody></table></code></div></div>
 
 <ul>
-  <li>使用<a href="https://www.toptal.com/developers/javascript-minifier">在线转换</a>将.js文件转成.min.js格式，生成的新文件为<code class="language-plaintext highlighter-rouge">/assets/lib/simple-jekyll-search/simple-jekyll-search.js</code>；</li>
+  <li>使用<a href="https://www.toptal.com/developers/javascript-minifier">在线转换</a>将.js文件转成.min.js格式，生成的新文件保存至<code class="language-plaintext highlighter-rouge">assets/lib/simple-jekyll-search/simple-jekyll-search.min.js</code>；</li>
   <li>在<code class="language-plaintext highlighter-rouge">_data/orginal/cors.yml</code>中修改了搜索算法的引用地址。</li>
 </ul>
 
@@ -1153,11 +1153,11 @@ A：如修</li>
 
 <h3 id="搜索结果展示"><span class="me-2">搜索结果展示</span><a href="#搜索结果展示" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
-<p>另一个问题是，Simple Jekyll Search虽然能告诉你哪些文章包含关键词，但它不会显示关键词具体出现在文章的哪个位置。这是Chirpy主题的一个关键词检索示例：</p>
+<p>另一个问题是Simple Jekyll Search虽然能告诉你哪些文章包含关键词，但它不会显示关键词具体出现在文章的哪个位置。这是使用原Chirpy主题进行关键词检索的一个示例：</p>
 
 <p><a href="/assets/img/custom-my-blog/original-search.jpeg" class="popup img-link  shimmer"><img src="/assets/img/custom-my-blog/original-search.jpeg" alt="" loading="lazy"></a></p>
 
-<p>可以看到，搜索引擎只是简单列出了包含关键词<code class="language-plaintext highlighter-rouge">Chirpy</code>的文章标题和简介，而实际上我更想知道关键词在这些文章中出现的位置，以及提及关键词的前后文。这篇<a href="https://reesdraminski.com/garden/search-with-simplejekyllsearch/">博客</a>提出了一种可行的优化思路：Simple Jekyll Search在完成全局搜索后，会输出所有包含关键词的文章。此时对这些文章再重复做一次关键词检索，记录下关键词在一篇文章中首次出现的位置，输出该位置向前数的50个字符（上文）和向后数的50个字符（下文）。</p>
+<p>可以看到，搜索引擎只是简单列出了包含关键词<code class="language-plaintext highlighter-rouge">Chirpy</code>的文章标题和简介，而实际上我更想知道关键词出现在文章中的哪个位置，以及提及该关键词的前后文。这篇<a href="https://reesdraminski.com/garden/search-with-simplejekyllsearch/">博客</a>提出了一种可行的优化思路：Simple Jekyll Search在完成全局搜索后，会输出所有包含关键词的文章。此时对这些文章再重复做一次关键词检索，记录下关键词在一篇文章中首次出现的位置，输出该位置向前数的50个字符（上文）和向后数的50个字符（下文）。</p>
 
 <p>我在<code class="language-plaintext highlighter-rouge">_includes/search_loader.html</code>中实现了这个思路，以下是部分代码片段：</p>
 
@@ -1312,21 +1312,21 @@ A：如修</li>
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Chirpy%E4%B8%BB%E9%A2%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8%20-%20N%E3%83%BBH%E3%83%BBK%20%E3%81%AB%E3%82%88%E3%81%86%E3%81%93%E3%81%9D%EF%BC%81&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcustomize-my-blog%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Chirpy%E4%B8%BB%E9%A2%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8%20-%20%E5%8E%BB%E4%BB%A5%E5%85%AD%E6%9C%88%E6%81%AF%E8%80%85%E4%B9%9F&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcustomize-my-blog%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Chirpy%E4%B8%BB%E9%A2%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8%20-%20N%E3%83%BBH%E3%83%BBK%20%E3%81%AB%E3%82%88%E3%81%86%E3%81%93%E3%81%9D%EF%BC%81&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcustomize-my-blog%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Chirpy%E4%B8%BB%E9%A2%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8%20-%20%E5%8E%BB%E4%BB%A5%E5%85%AD%E6%9C%88%E6%81%AF%E8%80%85%E4%B9%9F&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcustomize-my-blog%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcustomize-my-blog%2F&text=Chirpy%E4%B8%BB%E9%A2%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8%20-%20N%E3%83%BBH%E3%83%BBK%20%E3%81%AB%E3%82%88%E3%81%86%E3%81%93%E3%81%9D%EF%BC%81" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcustomize-my-blog%2F&text=Chirpy%E4%B8%BB%E9%A2%98%E7%9A%84%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8%20-%20%E5%8E%BB%E4%BB%A5%E5%85%AD%E6%9C%88%E6%81%AF%E8%80%85%E4%B9%9F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1381,6 +1381,27 @@ A：如修</li>
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/restart/">时间线重启</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/admission-letter/">通知书开箱</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/customize-my-blog/">Chirpy主题的进阶使用</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/build-my-blog-1/">Jekyll博客搭建教程（上篇）</a>
         </li>
       
@@ -1389,13 +1410,6 @@ A：如修</li>
         
         <li class="text-truncate lh-lg">
           <a href="/posts/build-my-blog-2/">Jekyll博客搭建教程（下篇）</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/customize-my-blog/">Chirpy主题的进阶使用</a>
         </li>
       
     </ul>
@@ -1590,9 +1604,13 @@ A：如修</li>
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/admission-letter/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>通知书开箱</p>
+    </a>
   
 </nav>
 
@@ -1689,7 +1707,7 @@ A：如修</li>
   "
 >
   <p>©
-    <time>2024</time>
+    2024-<time>2025</time>
 
     
       <a href="https://github.com/ittousei">MsEspeon</a>

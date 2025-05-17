@@ -8,12 +8,9 @@ order: 4
 
 - I'm [MsEspeon](https://github.com/ittousei).
 
-- I'm a VTuber fan, mainly watching VTBs in [Bilibili](https://www.bilibili.com/).
-  - My best-loved VTB (in 2024/04) is [恬豆发芽了](https://space.bilibili.com/1660392980).
-  - I'm also interested in idol groups like SNH48 and underground idols (地下偶像).
+- My English is so poor that the rest of the blog will be written in Chinese.
 
-- I'm an incoming Ph.D. student in Finance.
-  - Received a M.S. in Statistics.
-  - Received a B.S. in Mathematics and Physics.
-
-- I created this blog to do some daily writings.
+- 管人观众和地下偶像爱好者：
+  - 喜欢戏多又🍵的小女孩；
+  - 暗恋沪上阿姨<a href="https://www.bilibili.com/video/BV1Fm411S7bG/" target="_blank">七海Nana7mi</a>；
+  - 关注<a href="https://space.bilibili.com/1932862336" target="_blank">雨纪Ameki</a>（复活中）谢谢喵！

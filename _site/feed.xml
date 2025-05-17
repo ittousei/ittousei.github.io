@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>N・H・K にようこそ！</title>
-  <subtitle>A personal blog for recording everyday life, technical learning, and pieces of thoughts.</subtitle>
-  <updated>2024-05-01T00:02:12+08:00</updated>
+  <title>去以六月息者也</title>
+  <subtitle>A personal blog for recording pieces of thoughts.</subtitle>
+  <updated>2025-05-18T01:50:25+08:00</updated>
   <author>
     <name>MsEspeon</name>
     <uri>http://localhost:4000/</uri>
@@ -13,10 +13,58 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2024 MsEspeon </rights>
+  <rights> © 2025 MsEspeon </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>时间线重启</title>
+    <link href="http://localhost:4000/posts/restart/" rel="alternate" type="text/html" title="时间线重启" />
+    <published>2025-05-17T22:03:00+08:00</published>
+  
+    <updated>2025-05-17T22:03:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/restart/</id>
+    <content src="http://localhost:4000/posts/restart/" />
+    <author>
+      <name>MsEspeon</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+  
+
+  <summary>时隔一年，我又找回了自己的github账号...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>通知书开箱</title>
+    <link href="http://localhost:4000/posts/admission-letter/" rel="alternate" type="text/html" title="通知书开箱" />
+    <published>2024-07-22T00:27:00+08:00</published>
+  
+    <updated>2024-07-22T00:27:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/admission-letter/</id>
+    <content src="http://localhost:4000/posts/admission-letter/" />
+    <author>
+      <name>MsEspeon</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+  
+
+  <summary>周日中午，EMS送来了心心念念的录取通知书，我的博士申请也正式告一段落</summary>
+
+  </entry>
 
   
   <entry>
@@ -24,7 +72,7 @@
     <link href="http://localhost:4000/posts/customize-my-blog/" rel="alternate" type="text/html" title="Chirpy主题的进阶使用" />
     <published>2024-04-22T16:45:00+08:00</published>
   
-    <updated>2024-04-22T23:26:44+08:00</updated>
+    <updated>2024-05-01T00:04:13+08:00</updated>
   
     <id>http://localhost:4000/posts/customize-my-blog/</id>
     <content src="http://localhost:4000/posts/customize-my-blog/" />

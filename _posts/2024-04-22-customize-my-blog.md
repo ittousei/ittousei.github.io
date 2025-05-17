@@ -61,7 +61,7 @@ order: 3
 
 ### 创建和删除子页面
 
-现在，我希望在个人网站上创建一个留言板，放在网站子页`/treehole/`下。我们可以向`_tabs`目录添加模版文件`_tabs/treehole.md`来实现这一需求。
+例如我希望在个人网站上创建一个留言板，放在网站子页`/treehole/`下。我们可以向`_tabs`目录添加模版文件`_tabs/treehole.md`来实现这一需求。
 
 ```md
 ---
@@ -71,7 +71,7 @@ order: 2
 ---
 ```
 
-这样，网站会自动生成子页面`/treehole/`，并读取`_layouts/treehole.html`作为该页面的模版，我们可以在模版文件`treehole.html`中写入自己想要的模块，给网页添加新的功能。以下是html模版的一个简单示例（没有添加任何模块，只是输出‘Hello, world!’）：
+网站会自动生成子页面`/treehole/`，并读取`_layouts/treehole.html`作为该页面的模版，我们可以在模版文件`treehole.html`中写入自己想要的模块，给网页添加新的功能。以下是html模版的一个简单示例（没有添加任何模块，只是输出‘Hello, world!’）：
 
 ```html
 ---
@@ -82,7 +82,7 @@ layout: page
 <p>Hello, world!</p>
 ```
 
-同样的，如果想要删除某个子页面，比如标签页`/tags/`（因为我讨厌打标签），只需删除对应的模版文件`_tabs/tags.md`。
+同样如果想要删除某个子页面，比如标签页`/tags/`（因为我讨厌打标签），只需删除对应的模版文件`_tabs/tags.md`。
 
 ## 优化文本搜索
 
@@ -108,7 +108,7 @@ Chirpy主题在博客中内置了文本搜索功能，使用的搜索算法是Ch
 }
 ```
 
-这样一来，要在博客的文章中检索关键词，不用到每个文章的html页面一一查找，只需遍历一遍json文件即可。虽然实现思路很好，但实际写出来的代码却是一言难尽，而且原项目在2022年3月就停止维护了，你甚至找不到作者提修改建议。
+这样一来，要在博客的文章中检索关键词，不用到每个文章的html页面一一查找，只需遍历一遍json文件即可。虽然实现思路很好，但成品代码却一言难尽，而且原项目在2022年3月就停止维护了，也没法向作者提修改建议。
 
 ### 精准搜索
 
@@ -118,18 +118,18 @@ Chirpy主题在博客中内置了文本搜索功能，使用的搜索算法是Ch
 <mark style="background-color: rgba(255, 255, 153, 0.5);">Let</mark>'s take a photo here. I'll print <mark style="background-color: rgba(255, 255, 153, 0.5);">it</mark> on my shirt and <mark style="background-color: rgba(255, 255, 153, 0.5);">go</mark> to school.
 </center>
 
-这显然是不合理的，我希望这三个单词作为一个整体在句中出现，而不是去分别检索三个单词：
+这显然是不合理的，我希望三个单词作为一个整体在句中出现，而不是去分别检索三个单词：
 
 <center>
 <mark style="background-color: rgba(255, 255, 153, 0.5);">Let it go</mark>, since tomorrow is another day.
 </center>
 
-经过阅读相关讨论，我发现文本的精准匹配这个问题，实际上已经被作者修复了：
+查阅相关讨论，我发现文本的精准匹配这个问题，实际上已经被作者修复了：
 
 - [Simple-Jekyll-Search/issues/182](https://github.com/christian-fei/Simple-Jekyll-Search/issues/182)
 - [Simple-Jekyll-Search/pull/166](https://github.com/christian-fei/Simple-Jekyll-Search/pull/166)
 
-既然这个问题已经被解决了，为什么搜索结果还是那么奇怪呢？仔细阅读[项目代码](https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/)，会发现非常坑的一点，作者虽然在源文件`/src/`更新了代码，却没有在`/dest/`重新编译项目。
+既然问题已经解决了，为什么搜索结果还是那么奇怪呢？仔细阅读[项目代码](https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/)，会发现非常坑的一点，作者虽然在源目录`/src/`更新了代码，却没有在终目录`/dest/`重新编译项目。
 
 - Q：bug修了吗？ \\
   A：修了 \\
@@ -138,7 +138,7 @@ Chirpy主题在博客中内置了文本搜索功能，使用的搜索算法是Ch
 
 因此，我们需要重新编写搜索算法，并替换掉原先失效的算法库。具体步骤如下：
 
-- 在`/assets/lib/simple-jekyll-search/simple-jekyll-search.js`中重写了精确匹配的搜索算法；
+- 在`assets/lib/simple-jekyll-search/simple-jekyll-search.js`中重写精确匹配的搜索算法；
 
 ```js
 function LiteralSearchStrategy () {
@@ -152,7 +152,7 @@ function LiteralSearchStrategy () {
 }
 ```
 
-- 使用[在线转换](https://www.toptal.com/developers/javascript-minifier)将.js文件转成.min.js格式，生成的新文件为`/assets/lib/simple-jekyll-search/simple-jekyll-search.js`；
+- 使用[在线转换](https://www.toptal.com/developers/javascript-minifier)将.js文件转成.min.js格式，生成的新文件保存至`assets/lib/simple-jekyll-search/simple-jekyll-search.min.js`；
 - 在`_data/orginal/cors.yml`中修改了搜索算法的引用地址。
 
 ```yaml
@@ -165,11 +165,11 @@ search:
 
 ### 搜索结果展示
 
-另一个问题是，Simple Jekyll Search虽然能告诉你哪些文章包含关键词，但它不会显示关键词具体出现在文章的哪个位置。这是Chirpy主题的一个关键词检索示例：
+另一个问题是Simple Jekyll Search虽然能告诉你哪些文章包含关键词，但它不会显示关键词具体出现在文章的哪个位置。这是使用原Chirpy主题进行关键词检索的一个示例：
 
 ![](/assets/img/custom-my-blog/original-search.jpeg)
 
-可以看到，搜索引擎只是简单列出了包含关键词`Chirpy`的文章标题和简介，而实际上我更想知道关键词在这些文章中出现的位置，以及提及关键词的前后文。这篇[博客](https://reesdraminski.com/garden/search-with-simplejekyllsearch/)提出了一种可行的优化思路：Simple Jekyll Search在完成全局搜索后，会输出所有包含关键词的文章。此时对这些文章再重复做一次关键词检索，记录下关键词在一篇文章中首次出现的位置，输出该位置向前数的50个字符（上文）和向后数的50个字符（下文）。
+可以看到，搜索引擎只是简单列出了包含关键词`Chirpy`的文章标题和简介，而实际上我更想知道关键词出现在文章中的哪个位置，以及提及该关键词的前后文。这篇[博客](https://reesdraminski.com/garden/search-with-simplejekyllsearch/)提出了一种可行的优化思路：Simple Jekyll Search在完成全局搜索后，会输出所有包含关键词的文章。此时对这些文章再重复做一次关键词检索，记录下关键词在一篇文章中首次出现的位置，输出该位置向前数的50个字符（上文）和向后数的50个字符（下文）。
 
 我在`_includes/search_loader.html`中实现了这个思路，以下是部分代码片段：
 

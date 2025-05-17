@@ -14,12 +14,12 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: N・H・K にようこそ！ # the main title
+title: 去以六月息者也 # the main title
 
 tagline: MsEspeon@随便写写 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A personal blog for recording everyday life, technical learning, and pieces of thoughts.
+  A personal blog for recording pieces of thoughts.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
