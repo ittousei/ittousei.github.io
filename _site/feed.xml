@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>去以六月息者也</title>
   <subtitle>A personal blog for recording pieces of thoughts.</subtitle>
-  <updated>2025-05-18T02:11:54+08:00</updated>
+  <updated>2025-05-18T04:35:40+08:00</updated>
   <author>
     <name>MsEspeon</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>星星公主</title>
+    <link href="http://localhost:4000/posts/narutaru/" rel="alternate" type="text/html" title="星星公主" />
+    <published>2025-05-18T02:30:00+08:00</published>
+  
+    <updated>2025-05-18T02:30:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/narutaru/</id>
+    <content src="http://localhost:4000/posts/narutaru/" />
+    <author>
+      <name>MsEspeon</name>
+    </author>
+
+  
+    
+    <category term="二次元" />
+    
+  
+
+  <summary>改变世界的形状</summary>
+
+  </entry>
 
   
   <entry>
@@ -115,32 +139,6 @@
   
 
   <summary>Chirpy主题的使用说明：使用Chirpy设置博客布局，在GitHub Page上部署博客</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Jekyll博客搭建教程（上篇）</title>
-    <link href="http://localhost:4000/posts/build-my-blog-1/" rel="alternate" type="text/html" title="Jekyll博客搭建教程（上篇）" />
-    <published>2024-04-21T12:10:00+08:00</published>
-  
-    <updated>2024-04-22T23:26:44+08:00</updated>
-  
-    <id>http://localhost:4000/posts/build-my-blog-1/</id>
-    <content src="http://localhost:4000/posts/build-my-blog-1/" />
-    <author>
-      <name>MsEspeon</name>
-    </author>
-
-  
-    
-    <category term="Tutorial" />
-    
-    <category term="Jekyll" />
-    
-  
-
-  <summary>关于Jekyll环境的安装与使用</summary>
 
   </entry>
 

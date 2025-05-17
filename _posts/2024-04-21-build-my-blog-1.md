@@ -4,7 +4,7 @@ description: 关于Jekyll环境的安装与使用
 author: MsEspeon
 date: 2024-04-21 12:10:00 +0800
 categories: [Tutorial, Jekyll]
-pin: true
+pin: false
 math: true
 mermaid: true
 ---
