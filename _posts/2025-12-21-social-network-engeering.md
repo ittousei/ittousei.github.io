@@ -51,14 +51,14 @@ $$
 
 2、微博
 - 微博国际版（查互关，最近点赞）
-- 桃子圈（微博快照，站点挂了）：https://peachring.com/weibo/user/用户id
+- 桃子圈（微博快照，站点挂了）：[https://peachring.com/weibo/user/用户id](https://peachring.com/weibo/user/用户id)
 
 3、b站
 - 阿b的数据站很多，但最终能留存下来的很少
-- 奶糖花：https://laplace.live/
-- 查涨粉：https://vtbs.moe/
-- 查评论：https://www.aicu.cc/
-- 被删除的视频（仅限简介和封面）：https://www.jijidown.com/
+- 奶糖花：[https://laplace.live/](https://laplace.live/)
+- 查涨粉：[https://vtbs.moe/](https://vtbs.moe/)
+- 查评论：[https://www.aicu.cc/](https://www.aicu.cc/)
+- 被删除的视频（仅限简介和封面）：[https://www.jijidown.com/](https://www.jijidown.com/)
 
 4、公众号搜索
 - 学校信息，使用“姓名+地区”、“姓名+学校”进行关键词检索
@@ -70,8 +70,8 @@ $$
 - 通讯录联系人/可能认识的人
 
 7、贴吧
-- 高级搜索：https://tieba.baidu.com/f/search/adv
-- 不二工具箱（查回帖，站点挂了）：https://www.82cat.com/
+- 高级搜索：[https://tieba.baidu.com/f/search/adv](https://tieba.baidu.com/f/search/adv)
+- 不二工具箱（查回帖，站点挂了）：[https://www.82cat.com/](https://www.82cat.com/)
 
 8、谷歌文档
 - [vtb中之人](https://docs.google.com/spreadsheets/d/1RNEdFffeBXVsjXDY4JEKzeirCwMhCBFJbdl60e5CQic/htmlview#gid=0)
@@ -84,6 +84,6 @@ $$
 
 ![](https://bbs.pku.edu.cn/attach/28/c0/28c012ff9d3fbaa5/IMG_1959.png)
 
-验证：学历信息可以通过领英获取，使用关键词“姓名+top2学校”进行搜索，可以找到主播的领英主页。验证发现，该主播本科就读于双非学校，毕业后在top2读了一年水硕镀金，此后逢人便自夸自己是top2毕业的。不禁感概互联网的水还是过于深了。
+验证：学历信息可以通过领英获取，使用关键词“姓名+top2学校”进行搜索，可以找到主播的领英主页。验证发现，该主播本科就读于一所双非院校，毕业后在top2读了一年水硕镀金，此后逢人便自夸自己是top2毕业的。不禁感概互联网的水还是过于深了。
 
 ![](https://bbs.pku.edu.cn/attach/8f/c4/8fc468f400e3e5c9/SCR-20251223-dbxp.png)
