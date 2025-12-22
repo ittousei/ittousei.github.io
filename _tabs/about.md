@@ -12,6 +12,6 @@ order: 4
 
 - 管人观众和地下偶像厨：
   - 喜欢戏多又🍵的小女孩；
-  - 暗恋沪上阿姨<a href="https://www.bilibili.com/video/BV1Fm411S7bG/" target="_blank">七海Nana7mi（准备润日）</a>；
-  - 黄怡慈（已毕业，已润日）是世界上最好的偶像；
+  - 暗恋沪上阿姨<a href="https://www.bilibili.com/video/BV1Fm411S7bG/" target="_blank">七海Nana7mi</a>（准备润日）；
+  - 黄怡慈（已润日）是世界上最好的偶像；
   - 关注<a href="https://space.bilibili.com/1932862336" target="_blank">雨纪Ameki</a>（已复活）谢谢喵！
