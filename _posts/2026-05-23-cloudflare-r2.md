@@ -38,7 +38,7 @@ Cloudflare R2是Cloudflare提供的对象存储服务，适合保存图片、视
 
 R2的官方文档：
 
-- R2 介绍: https://developers.cloudflare.com/r2/how-r2-works/
+- [https://developers.cloudflare.com/r2/how-r2-works/](https://developers.cloudflare.com/r2/how-r2-works/)
 
 ## R2的计费方式
 
@@ -60,7 +60,7 @@ Cloudflare R2的计费方式是先用免费档位的Free Plan把用户骗进来�
 
 官方定价页：
 
-- https://developers.cloudflare.com/r2/pricing/
+- [https://developers.cloudflare.com/r2/pricing/](https://developers.cloudflare.com/r2/pricing/)
 
 ## 批量上传文件
 
@@ -71,16 +71,16 @@ Cloudflare R2以Bucket为单位进行对象存储，上传对象时需要指定B
 1. 登录[Cloudflare Dashboard](https://dash.cloudflare.com/)
 2. 进入`R2 Object Storage`
 3. 点击`Create bucket`
-4. 输入bucket名称
+4. 输入Bucket名称
 5. 选择存储类型（选取`Standard`类型，`Infrequent Access`并不包含在Free Plan内）
 
-新建bucket的官方文档：
+新建Bucket的官方文档：
 
-- Create new buckets: https://developers.cloudflare.com/r2/buckets/create-buckets/
+- [https://developers.cloudflare.com/r2/buckets/create-buckets/](https://developers.cloudflare.com/r2/buckets/create-buckets/)
 
-### 上传对象
+### 上传文件
 
-Cloudflare支持多种方式上传：
+Cloudflare支持多种方式上传文件：
 
 - Dashboard
 - Wrangler
@@ -89,11 +89,11 @@ Cloudflare支持多种方式上传：
 
 其中，Dashboard为在网页端手动上传，但只支持上传少量、小体积文件，无法满足批量上传的需求；Wrangler和`rclone`是Cloudflare提供的命令行工具；S3 API提供了编程接口，可以通过编写代码实现上传。后三种方式均支持批量化上传文件，我选用的方法是`rclone`，运行环境是Mac的`terminal`。
 
-上传对象的官方文档：
+上传文件的官方文档：
 
-- Upload objects: https://developers.cloudflare.com/r2/objects/multipart-objects/
-- CLI: https://developers.cloudflare.com/r2/get-started/cli/
-- S3 API: https://developers.cloudflare.com/r2/api/s3/
+- [https://developers.cloudflare.com/r2/objects/multipart-objects/](https://developers.cloudflare.com/r2/objects/multipart-objects/)
+- [https://developers.cloudflare.com/r2/get-started/cli/](https://developers.cloudflare.com/r2/get-started/cli/)
+- [https://developers.cloudflare.com/r2/api/s3/](https://developers.cloudflare.com/r2/api/s3/)
 
 ### rclone的安装与配置
 
@@ -115,7 +115,7 @@ rclone config
 - Secret Access Key
 - S3 endpoint
 
-你需要访问网页端的[Cloudflare Dashboard](https://dash.cloudflare.com/) ，在先前创建的bucket中设置R2 API Token，拿到这三个值。
+你需要访问网页端的[Cloudflare Dashboard](https://dash.cloudflare.com/) ，在先前创建的Bucket中设置R2 API Token，拿到这三个值。
 
 配置完毕后，就能批量上传文件了，输入以下命令（自行替换{}部分），上传的文件夹将保留本地的目录结构：
 
@@ -125,7 +125,7 @@ rclone copy {本地文件夹名} r2:{bucket名}/{文件夹名}/
 
 配置`rclone`的官方文档：
 
-- https://developers.cloudflare.com/r2/examples/rclone/
+- [https://developers.cloudflare.com/r2/examples/rclone/](https://developers.cloudflare.com/r2/examples/rclone/)
 
 ## 公开访问
 
@@ -133,12 +133,12 @@ rclone copy {本地文件夹名} r2:{bucket名}/{文件夹名}/
 
 Cloudflare R2提供了两种方式实现公开访问：
 
-- Public Development URL：Cloudflare会为每个bucket分配一个公共URL，开启后可以通过该URL访问存储在R2中的对象
+- Public Development URL：Cloudflare会为每个Bucket分配一个公共URL，开启后可以通过该URL访问存储在R2中的对象
 - 自定义域名：将R2绑定到一个自定义域名上，通过该域名访问存储在R2中的对象
 
 公开访问的官方文档：
 
-- Public buckets: https://developers.cloudflare.com/r2/data-access/public-buckets/
+- [https://developers.cloudflare.com/r2/data-access/public-buckets/](https://developers.cloudflare.com/r2/data-access/public-buckets/)
 
 ### Public Development URL
 
@@ -188,12 +188,12 @@ https://pub-xxxxxxxx.r2.dev/images/image_01.jpg
 
 ## 官方文档汇总
 
-- R2介绍: https://developers.cloudflare.com/r2/how-r2-works/
-- R2定价: https://developers.cloudflare.com/r2/pricing/
-- 创建Bucket: https://developers.cloudflare.com/r2/buckets/create-buckets/
-- 上传对象: https://developers.cloudflare.com/r2/objects/multipart-objects/
-- CLI: https://developers.cloudflare.com/r2/get-started/cli/
-- S3 API: https://developers.cloudflare.com/r2/api/s3/
-- 公开访问: https://developers.cloudflare.com/r2/data-access/public-buckets/
-- Limits: https://developers.cloudflare.com/r2/platform/limits/
-- R2与Cache: https://developers.cloudflare.com/cache/interaction-cloudflare-products/r2/
+- R2介绍: [https://developers.cloudflare.com/r2/how-r2-works/](https://developers.cloudflare.com/r2/how-r2-works/)
+- R2定价: [https://developers.cloudflare.com/r2/pricing/](https://developers.cloudflare.com/r2/pricing/)
+- 创建Bucket: [https://developers.cloudflare.com/r2/buckets/create-buckets/](https://developers.cloudflare.com/r2/buckets/create-buckets/)
+- 上传对象: [https://developers.cloudflare.com/r2/objects/multipart-objects/](https://developers.cloudflare.com/r2/objects/multipart-objects/)
+- CLI: [https://developers.cloudflare.com/r2/get-started/cli/](https://developers.cloudflare.com/r2/get-started/cli/)
+- S3 API: [https://developers.cloudflare.com/r2/api/s3/](https://developers.cloudflare.com/r2/api/s3/)
+- 公开访问: [https://developers.cloudflare.com/r2/data-access/public-buckets/](https://developers.cloudflare.com/r2/data-access/public-buckets/)
+- Limits: [https://developers.cloudflare.com/r2/platform/limits/](https://developers.cloudflare.com/r2/platform/limits/)
+- R2与Cache: [https://developers.cloudflare.com/cache/interaction-cloudflare-products/r2/](https://developers.cloudflare.com/cache/interaction-cloudflare-products/r2/)
