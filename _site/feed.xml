@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>去以六月息</title>
   <subtitle>A personal blog for recording pieces of thoughts.</subtitle>
-  <updated>2026-05-27T21:22:07+08:00</updated>
+  <updated>2026-05-28T00:14:16+08:00</updated>
   <author>
     <name>MsEspeon</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,44 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>记一位我永远无法理解的朋友</title>
+    <link href="http://localhost:4000/posts/repost-a-friend/" rel="alternate" type="text/html" title="记一位我永远无法理解的朋友" />
+    <published>2026-05-27T21:57:00+08:00</published>
+  
+    <updated>2026-05-27T21:57:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/repost-a-friend/</id>
+    <content src="http://localhost:4000/posts/repost-a-friend/" />
+    <author>
+      <name>Unknown</name>
+    </author>
+
+  
+    
+    <category term="Repost" />
+    
+  
+
+  <summary>本文首发于微信公众号，原作者不详。
+
+
+
+2026年5月20日下午，我的高中语文老师给我发了一条信息：
+
+“思嘉，婷云的事是不是真的？”
+
+然后我知道婷云死了。
+
+我第一次对婷云有印象，是初一的英语课。一个长得像猫一样的女生走上讲台，猫眼，鼻子很翘，脸小小的，头发梳成简单的马尾，一直垂到腰以下，像猫的尾巴。她风风火火地站上去，叽里咕噜说了一大堆我当时完全听不懂的英文，非常流利地把全场都镇住之后，头发一甩又风风火火地走下来。
+
+我11岁，觉得12岁的她好厉害，应该不是很好相处。
+
+两年过去，我和她有时分在同一个组，但一直不能算很熟。然后到了初三，直升，开始学高中的课，分了新班级。我记得那天是换座位，我和她都来得很晚，于是做了同桌。有一个晚自习，管的很松，我们在下面偷偷玩游戏。非常无聊的游戏，一个人形容教室里的某个东西另一个人猜。我看着她，悄悄说：“小长。”她立刻回答：“我的头发。”然后...</summary>
+
+  </entry>
 
   
   <entry>
@@ -123,7 +161,7 @@
 
 
 
-和上回一样还是从印象比较深的成员聊起，Team C的队伍配置是王思予和雷雨霄双C，带人气还行的朱瑞缘和一票伴舞的糊糊，总体来说阵容还是相对单薄。
+和上回一样还是从印象比较深的成员聊起，Team C的队伍配置是王思予和雷宇霄双C，带人气还行的朱瑞缘和一票伴舞的糊糊，总体来说阵容还是相对单薄。
 
 队伍的1号位是王思予，人称鲨鲨，之前在b站...</summary>
 
@@ -149,37 +187,13 @@
     
   
 
-  <summary>本月塞纳河开启了全国巡演，虽然名为全国巡演，但实际举办演出的仅有沪、广、京、川、渝五地，也就是原本有剧场的那五个地方，可以说是相当节约成本的选择。本周上海的日程安排是周六NIII巡演，周日CII巡演，周六有课脱不开身只好作罢，有幸赶上了周日巡演的末班车。
+  <summary>本月塞纳河开启了全国巡演，虽然名为全国巡演，但实际举办演出的仅有沪、广、京、川、渝五地，也就是原本有剧场的那五个地方，可以说是相当节约成本的选择。本周上海的日程安排是周六NIII巡演、周日CII巡演，周六有课脱不开身只好作罢，有幸赶上了周日巡演的末班车。
 
 本次公演的主题是《幻镜》，上芭SII的老公演，当然我没有看过，26年1月由CII复刻，CII是来自成都分团CGT48的队伍，我也不甚了解，唯一的印象就是这个分团很糊，近几个月甚至传出了要倒闭的传言。
 
 糊归糊，现场看下来舞台表现还是很不错的，说几个印象比较深的成员：
 
-谭巨C，队伍的C位，不过确实对得起这个名字，无论是身高还是舞台表现力都明显压其他成员一头，颜值比较有记忆点，不是那种大众网红脸。最早听到的这个名字是因为隔壁社会队改名为tsh48，由此听到了一些队伍独狼、一人成团的黑屁，不过这次公演看队伍关系并没有传闻说的那么尴尬，...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>社交网络漫游指南</title>
-    <link href="http://localhost:4000/posts/social-network-engeering/" rel="alternate" type="text/html" title="社交网络漫游指南" />
-    <published>2025-12-22T23:45:00+08:00</published>
-  
-    <updated>2025-12-23T03:47:15+08:00</updated>
-  
-    <id>http://localhost:4000/posts/social-network-engeering/</id>
-    <content src="http://localhost:4000/posts/social-network-engeering/" />
-    <author>
-      <name>MsEspeon</name>
-    </author>
-
-  
-    
-    <category term="意义不明" />
-    
-  
-
-  <summary>一直想写一篇关于信息安全的东西，但写到什么程度比较难以把握</summary>
+谭老铁，队伍的C位，无论是身高还是舞台表现力都明显压其他成员一头，颜值也比较有记忆点，不是那种大众网红脸。最早听到的这个名字是因为隔壁社会队改名为tsh48，由此听到了一些队伍独狼、一人成团的黑屁，不过这次公演看队伍关系并没有传闻说的那么尴尬，甚至本人也玩起了“和队...</summary>
 
   </entry>
 
