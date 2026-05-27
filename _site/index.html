@@ -30,23 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="去以六月息者也" />
+<meta property="og:title" content="去以六月息" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="A personal blog for recording pieces of thoughts." />
 <meta property="og:description" content="A personal blog for recording pieces of thoughts." />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="去以六月息者也" />
+<meta property="og:site_name" content="去以六月息" />
 <meta property="og:type" content="website" />
+<link rel="next" href="http://localhost:4000/page2" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="去以六月息者也" />
+<meta property="twitter:title" content="去以六月息" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A personal blog for recording pieces of thoughts.","headline":"去以六月息者也","name":"MsEspeon","sameAs":["https://github.com/ittousei"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"A personal blog for recording pieces of thoughts.","headline":"去以六月息","name":"MsEspeon","sameAs":["https://github.com/ittousei"],"url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>去以六月息者也
+  <title>去以六月息
   </title>
 
   <!--
@@ -63,8 +64,8 @@
   <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
 
 <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
-<meta name="apple-mobile-web-app-title" content="去以六月息者也">
-<meta name="application-name" content="去以六月息者也">
+<meta name="apple-mobile-web-app-title" content="去以六月息">
+<meta name="application-name" content="去以六月息">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
@@ -272,7 +273,7 @@
     <a href="/" id="avatar" class="rounded-circle"><img src="/assets/img/avatar.jpeg" width="112" height="112" alt="avatar" onerror="this.style.display='none'"></a>
 
     <h1 class="site-title">
-      <a href="/">去以六月息者也</a>
+      <a href="/">去以六月息</a>
     </h1>
     <p class="site-subtitle mb-0">MsEspeon@随便写写</p>
   </header>
@@ -434,7 +435,7 @@
     </button>
 
     <div id="topbar-title">
-      去以六月息者也
+      去以六月息
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -551,6 +552,408 @@
 
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
+  
+    <article class="card-wrapper card">
+      <a href="/posts/cloudflare-r2/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">使用Cloudflare R2搭建个人图床</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>本文简单探讨了使用Cloudflare R2对个人网站的图片资源实现批量化管理，算是桃子圈数据备份与微博镜像站搭建的一个额外延伸，不过文中涉及到的相关技术工具同样适用于个人博客的图床搭建。
+
+在搭建微博镜像站点的过程中，图片资源的存储和访问是一个重要的问题。此前对于个人博客的图片资源，我采用的管理方案是手动维护：
+
+
+  对于微博镜像项目，需要备份的图片数量超过10k张，手动维护显然不再可行...</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1779545400"
+  data-df="ll"
+  
+>
+  May 23, 2026
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      Tutorial,
+                      Cloudflare
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/peachring-archive/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">桃子圈数据备份与微博镜像站搭建</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>久违的“技术”博客。前段时间桃子圈恢复了运营，总算是又能见到日思夜想的管人里垢了。喜悦之余，考虑到这个网站屡次出现服务器到期、无法访问的情况，还是决定把它的数据备份下来，毕竟自己动手丰衣足食，靠别人不如靠自己。
+
+最近Vibe Coding的概念炒得火热，不如借此机会做一个桃子圈的爬虫程序，算是对新技术的粗浅尝试。
+
+什么是桃子圈？
+
+“桃子圈”（peachring.com）是一个第三方的微...</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1779545280"
+  data-df="ll"
+  
+>
+  May 23, 2026
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      Tutorial,
+                      Vibe Coding
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/idol-record-2/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">偶活记录——C《第一人称》&E《遗忘的国度》</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>算是上周的后续。本周是结课周，忙了一个半月总算是从繁重的学业中暂时解放了出来，不得不吐槽学校的课程安排实在是不合理，居然把国外一学期的课程压缩到六周上完，这就是所谓的揠苗助长吧。周五肝了一天赶完课程报告，把周末的时间留出来搞偶活放纵一下。
+
+本周参加的第一场公演是CKG48 Team C的《第一人称》，这支队伍我还是比较熟悉的，因为上个月C&amp;amp;K联合巡演刚来过一次。相比上次两支队伍的拼...</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1776615000"
+  data-df="ll"
+  
+>
+  Apr 20, 2026
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      日常
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/idol-record-1/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">偶活记录——CII《幻镜》巡演</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>本月塞纳河开启了全国巡演，虽然名为全国巡演，但实际举办演出的仅有沪、广、京、川、渝五地，也就是原本有剧场的那五个地方，可以说是相当节约成本的选择。本周上海的日程安排是周六NIII巡演，周日CII巡演，周六有课脱不开身只好作罢，有幸赶上了周日巡演的末班车。
+
+本次公演的主题是《幻镜》，上芭SII的老公演，当然我没有看过，26年1月由CII复刻，CII是来自成都分团CGT48的队伍，我也不甚了解...</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1775998020"
+  data-df="ll"
+  
+>
+  Apr 12, 2026
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      日常
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/social-network-engeering/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">社交网络漫游指南</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>一直想写一篇关于信息安全的东西，但写到什么程度比较难以把握</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1766418300"
+  data-df="ll"
+  
+>
+  Dec 22, 2025
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      意义不明
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/first-year-phd/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">第一年小结</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>趁此一周年之际，回顾一下什么实现了，什么又偏离了预期</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1764085920"
+  data-df="ll"
+  
+>
+  Nov 25, 2025
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      日常
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
+  
+    <article class="card-wrapper card">
+      <a href="/posts/regret/" class="post-preview row g-0 flex-md-row-reverse">
+        
+
+        
+
+        <div class="col-md-12">
+          <div class="card-body d-flex flex-column">
+            <h1 class="card-title my-2 mt-md-0">忏悔</h1>
+
+            <div class="card-text content mt-0 mb-3">
+              <p>胡言乱语</p>
+            </div>
+
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1749318480"
+  data-df="ll"
+  
+>
+  Jun  8, 2025
+</time>
+
+
+                <!-- categories -->
+                
+                  <i class="far fa-folder-open fa-fw me-1"></i>
+                  <span class="categories">
+                    
+                      意义不明
+                  </span>
+                
+              </div>
+
+              
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
+      </a>
+    </article>
   
     <article class="card-wrapper card">
       <a href="/posts/mononoke/" class="post-preview row g-0 flex-md-row-reverse">
@@ -717,231 +1120,82 @@
       </a>
     </article>
   
-    <article class="card-wrapper card">
-      <a href="/posts/admission-letter/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">通知书开箱</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>周日中午，EMS送来了心心念念的录取通知书，我的博士申请也正式告一段落</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1721579220"
-  data-df="ll"
-  
->
-  Jul 22, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      日常
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/customize-my-blog/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Chirpy主题的进阶使用</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>一些基于Chirpy主题的个性化设置</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1713775500"
-  data-df="ll"
-  
->
-  Apr 22, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Tutorial,
-                      Jekyll
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/build-my-blog-2/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Jekyll博客搭建教程（下篇）</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>Chirpy主题的使用说明：使用Chirpy设置博客布局，在GitHub Page上部署博客</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1713701820"
-  data-df="ll"
-  
->
-  Apr 21, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Tutorial,
-                      Jekyll
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/build-my-blog-1/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-
-        <div class="col-md-12">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">Jekyll博客搭建教程（上篇）</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>关于Jekyll环境的安装与使用</p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1713672600"
-  data-df="ll"
-  
->
-  Apr 21, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Tutorial,
-                      Jekyll
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
 </div>
 <!-- #post-list -->
+
+
+  <!-- The paginator for post list on HomgPage. -->
+
+<nav aria-label="Page Navigation">
+  <ul class="pagination align-items-center mt-4 mb-0">
+    <!-- left arrow -->
+    
+
+    <li class="page-item disabled">
+      <a class="page-link" href="#" aria-label="previous-page">
+        <i class="fas fa-angle-left"></i>
+      </a>
+    </li>
+
+    <!-- page numbers -->
+    
+    
+
+    
+      
+      
+      
+      
+      
+
+      
+
+      
+        <!-- show number -->
+        <li class="page-item  active">
+          <a
+            class="page-link"
+            href="/"
+          >1</a>
+        </li>
+      
+    
+      
+      
+      
+      
+      
+
+      
+
+      
+        <!-- show number -->
+        <li class="page-item ">
+          <a
+            class="page-link"
+            href="/page2"
+          >2</a>
+        </li>
+      
+    
+
+    <!-- mobile pagination -->
+    <li class="page-index align-middle">
+      <span>1</span>
+      <span class="text-muted">/ 2</span>
+    </li>
+
+    <!-- right arrow -->
+    
+
+    <li class="page-item ">
+      <a class="page-link" href="/page2" aria-label="next-page">
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- .pagination -->
 
 
 
@@ -975,21 +1229,21 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/admission-letter/">通知书开箱</a>
+          <a href="/posts/peachring-archive/">桃子圈数据备份与微博镜像站搭建</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/restart/">时间线重启</a>
+          <a href="/posts/cloudflare-r2/">使用Cloudflare R2搭建个人图床</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/narutaru/">星星公主</a>
+          <a href="/posts/idol-record-2/">偶活记录——C《第一人称》&E《遗忘的国度》</a>
         </li>
       
         
@@ -1003,7 +1257,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/build-my-blog-1/">Jekyll博客搭建教程（上篇）</a>
+          <a href="/posts/idol-record-1/">偶活记录——CII《幻镜》巡演</a>
         </li>
       
     </ul>
@@ -1059,7 +1313,7 @@
   "
 >
   <p>©
-    2024-<time>2025</time>
+    2024-<time>2026</time>
 
     
       <a href="https://github.com/ittousei">MsEspeon</a>

@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>去以六月息者也</title>
+  <title>去以六月息</title>
   <subtitle>A personal blog for recording pieces of thoughts.</subtitle>
-  <updated>2025-05-26T01:35:43+08:00</updated>
+  <updated>2026-05-27T21:22:07+08:00</updated>
   <author>
     <name>MsEspeon</name>
     <uri>http://localhost:4000/</uri>
@@ -13,117 +13,21 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2025 MsEspeon </rights>
+  <rights> © 2026 MsEspeon </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
-    <title>周末小记</title>
-    <link href="http://localhost:4000/posts/mononoke/" rel="alternate" type="text/html" title="周末小记" />
-    <published>2025-05-25T23:50:00+08:00</published>
+    <title>使用Cloudflare R2搭建个人图床</title>
+    <link href="http://localhost:4000/posts/cloudflare-r2/" rel="alternate" type="text/html" title="使用Cloudflare R2搭建个人图床" />
+    <published>2026-05-23T22:10:00+08:00</published>
   
-    <updated>2025-05-25T23:50:00+08:00</updated>
+    <updated>2026-05-23T23:40:11+08:00</updated>
   
-    <id>http://localhost:4000/posts/mononoke/</id>
-    <content src="http://localhost:4000/posts/mononoke/" />
-    <author>
-      <name>MsEspeon</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-  
-
-  <summary>两周忙完了两场pre和一门期末考试，这个五月总算是闲了下来</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>星星公主</title>
-    <link href="http://localhost:4000/posts/narutaru/" rel="alternate" type="text/html" title="星星公主" />
-    <published>2025-05-18T02:30:00+08:00</published>
-  
-    <updated>2025-05-26T01:20:12+08:00</updated>
-  
-    <id>http://localhost:4000/posts/narutaru/</id>
-    <content src="http://localhost:4000/posts/narutaru/" />
-    <author>
-      <name>MsEspeon</name>
-    </author>
-
-  
-    
-    <category term="二次元" />
-    
-  
-
-  <summary>改变世界的形状</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>时间线重启</title>
-    <link href="http://localhost:4000/posts/restart/" rel="alternate" type="text/html" title="时间线重启" />
-    <published>2025-05-17T22:03:00+08:00</published>
-  
-    <updated>2025-05-26T01:20:12+08:00</updated>
-  
-    <id>http://localhost:4000/posts/restart/</id>
-    <content src="http://localhost:4000/posts/restart/" />
-    <author>
-      <name>MsEspeon</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-  
-
-  <summary>时隔一年，我又找回了自己的github账号</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>通知书开箱</title>
-    <link href="http://localhost:4000/posts/admission-letter/" rel="alternate" type="text/html" title="通知书开箱" />
-    <published>2024-07-22T00:27:00+08:00</published>
-  
-    <updated>2025-05-26T01:20:12+08:00</updated>
-  
-    <id>http://localhost:4000/posts/admission-letter/</id>
-    <content src="http://localhost:4000/posts/admission-letter/" />
-    <author>
-      <name>MsEspeon</name>
-    </author>
-
-  
-    
-    <category term="日常" />
-    
-  
-
-  <summary>周日中午，EMS送来了心心念念的录取通知书，我的博士申请也正式告一段落</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Chirpy主题的进阶使用</title>
-    <link href="http://localhost:4000/posts/customize-my-blog/" rel="alternate" type="text/html" title="Chirpy主题的进阶使用" />
-    <published>2024-04-22T16:45:00+08:00</published>
-  
-    <updated>2025-05-18T01:51:07+08:00</updated>
-  
-    <id>http://localhost:4000/posts/customize-my-blog/</id>
-    <content src="http://localhost:4000/posts/customize-my-blog/" />
+    <id>http://localhost:4000/posts/cloudflare-r2/</id>
+    <content src="http://localhost:4000/posts/cloudflare-r2/" />
     <author>
       <name>MsEspeon</name>
     </author>
@@ -132,11 +36,150 @@
     
     <category term="Tutorial" />
     
-    <category term="Jekyll" />
+    <category term="Cloudflare" />
     
   
 
-  <summary>一些基于Chirpy主题的个性化设置</summary>
+  <summary>本文简单探讨了使用Cloudflare R2对个人网站的图片资源实现批量化管理，算是桃子圈数据备份与微博镜像站搭建的一个额外延伸，不过文中涉及到的相关技术工具同样适用于个人博客的图床搭建。
+
+在搭建微博镜像站点的过程中，图片资源的存储和访问是一个重要的问题。此前对于个人博客的图片资源，我采用的管理方案是手动维护：
+
+
+  对于微博镜像项目，需要备份的图片数量超过10k张，手动维护显然不再可行，需要诉诸一个专业的图片托管服务来管理这些资源
+  对于个人博客，随着文章数量的堆叠，需要管理的图片也在不断增加，未来还会有增量更新的需求，继续手动一张张添加图片也不现实
+
+
+基于以上两点考量，批量化图片资源管理的需求提上了日程。
+
+对于个人站点的图片资源管理，需要满足以下要求：
+
+1、批量上传且保留文件目录结构（批量引用）：批量化的自动管理是这个项目的初衷
+2、公开访问且不借助科学上网：这是一个...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>桃子圈数据备份与微博镜像站搭建</title>
+    <link href="http://localhost:4000/posts/peachring-archive/" rel="alternate" type="text/html" title="桃子圈数据备份与微博镜像站搭建" />
+    <published>2026-05-23T22:08:00+08:00</published>
+  
+    <updated>2026-05-23T23:40:11+08:00</updated>
+  
+    <id>http://localhost:4000/posts/peachring-archive/</id>
+    <content src="http://localhost:4000/posts/peachring-archive/" />
+    <author>
+      <name>MsEspeon</name>
+    </author>
+
+  
+    
+    <category term="Tutorial" />
+    
+    <category term="Vibe Coding" />
+    
+  
+
+  <summary>久违的“技术”博客。前段时间桃子圈恢复了运营，总算是又能见到日思夜想的管人里垢了。喜悦之余，考虑到这个网站屡次出现服务器到期、无法访问的情况，还是决定把它的数据备份下来，毕竟自己动手丰衣足食，靠别人不如靠自己。
+
+最近Vibe Coding的概念炒得火热，不如借此机会做一个桃子圈的爬虫程序，算是对新技术的粗浅尝试。
+
+什么是桃子圈？
+
+“桃子圈”（peachring.com）是一个第三方的微博数据抓取与备份网站。它的主要功能是将特定微博博主的内容（包括图文、视频和动态）进行批量归档和快照保存，常被用于查看博主已删除、仅半年可见或隐藏的动态。
+
+对于管人观众，考虑到大部分管人有出道后清空、注销前世账号的习惯，导致粉丝难以获取中之人早期的动态内容。因此，桃子圈的微博快照成为研究中之人信息的重要资料。至于为什么不看皮套反而去关注皮下，此处需要@四禧丸子。
+
+为什么要对桃子圈进行备份？
+
+由...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>偶活记录——C《第一人称》&amp;E《遗忘的国度》</title>
+    <link href="http://localhost:4000/posts/idol-record-2/" rel="alternate" type="text/html" title="偶活记录——C《第一人称》&amp;amp;E《遗忘的国度》" />
+    <published>2026-04-20T00:10:00+08:00</published>
+  
+    <updated>2026-05-23T23:22:32+08:00</updated>
+  
+    <id>http://localhost:4000/posts/idol-record-2/</id>
+    <content src="http://localhost:4000/posts/idol-record-2/" />
+    <author>
+      <name>MsEspeon</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+  
+
+  <summary>算是上周的后续。本周是结课周，忙了一个半月总算是从繁重的学业中暂时解放了出来，不得不吐槽学校的课程安排实在是不合理，居然把国外一学期的课程压缩到六周上完，这就是所谓的揠苗助长吧。周五肝了一天赶完课程报告，把周末的时间留出来搞偶活放纵一下。
+
+本周参加的第一场公演是CKG48 Team C的《第一人称》，这支队伍我还是比较熟悉的，因为上个月C&amp;amp;amp;K联合巡演刚来过一次。相比上次两支队伍的拼盘公演，这次把分团的预备生也带了过来。虽然排在周六下午的黄金时段，但这场的上座率并不高，普座区大部分是空出来的，只卖完了站区和V座。值得肯定的是，粉丝的应援工作做的还是很到位的，每个成员都弄了易拉宝。
+
+
+
+
+和上回一样还是从印象比较深的成员聊起，Team C的队伍配置是王思予和雷雨霄双C，带人气还行的朱瑞缘和一票伴舞的糊糊，总体来说阵容还是相对单薄。
+
+队伍的1号位是王思予，人称鲨鲨，之前在b站...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>偶活记录——CII《幻镜》巡演</title>
+    <link href="http://localhost:4000/posts/idol-record-1/" rel="alternate" type="text/html" title="偶活记录——CII《幻镜》巡演" />
+    <published>2026-04-12T20:47:00+08:00</published>
+  
+    <updated>2026-04-12T20:47:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/idol-record-1/</id>
+    <content src="http://localhost:4000/posts/idol-record-1/" />
+    <author>
+      <name>MsEspeon</name>
+    </author>
+
+  
+    
+    <category term="日常" />
+    
+  
+
+  <summary>本月塞纳河开启了全国巡演，虽然名为全国巡演，但实际举办演出的仅有沪、广、京、川、渝五地，也就是原本有剧场的那五个地方，可以说是相当节约成本的选择。本周上海的日程安排是周六NIII巡演，周日CII巡演，周六有课脱不开身只好作罢，有幸赶上了周日巡演的末班车。
+
+本次公演的主题是《幻镜》，上芭SII的老公演，当然我没有看过，26年1月由CII复刻，CII是来自成都分团CGT48的队伍，我也不甚了解，唯一的印象就是这个分团很糊，近几个月甚至传出了要倒闭的传言。
+
+糊归糊，现场看下来舞台表现还是很不错的，说几个印象比较深的成员：
+
+谭巨C，队伍的C位，不过确实对得起这个名字，无论是身高还是舞台表现力都明显压其他成员一头，颜值比较有记忆点，不是那种大众网红脸。最早听到的这个名字是因为隔壁社会队改名为tsh48，由此听到了一些队伍独狼、一人成团的黑屁，不过这次公演看队伍关系并没有传闻说的那么尴尬，...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>社交网络漫游指南</title>
+    <link href="http://localhost:4000/posts/social-network-engeering/" rel="alternate" type="text/html" title="社交网络漫游指南" />
+    <published>2025-12-22T23:45:00+08:00</published>
+  
+    <updated>2025-12-23T03:47:15+08:00</updated>
+  
+    <id>http://localhost:4000/posts/social-network-engeering/</id>
+    <content src="http://localhost:4000/posts/social-network-engeering/" />
+    <author>
+      <name>MsEspeon</name>
+    </author>
+
+  
+    
+    <category term="意义不明" />
+    
+  
+
+  <summary>一直想写一篇关于信息安全的东西，但写到什么程度比较难以把握</summary>
 
   </entry>
 
