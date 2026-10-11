@@ -6,14 +6,14 @@
   <subtitle>A personal blog for recording pieces of thoughts.</subtitle>
   <updated>2026-05-28T00:14:16+08:00</updated>
   <author>
-    <name>MsEspeon</name>
+    <name>Ittousei</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
-  <rights> © 2026 MsEspeon </rights>
+  <rights> © 2026 Ittousei </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -67,7 +67,7 @@
     <id>http://localhost:4000/posts/cloudflare-r2/</id>
     <content src="http://localhost:4000/posts/cloudflare-r2/" />
     <author>
-      <name>MsEspeon</name>
+      <name>Ittousei</name>
     </author>
 
   
@@ -107,7 +107,7 @@
     <id>http://localhost:4000/posts/peachring-archive/</id>
     <content src="http://localhost:4000/posts/peachring-archive/" />
     <author>
-      <name>MsEspeon</name>
+      <name>Ittousei</name>
     </author>
 
   
@@ -145,7 +145,7 @@
     <id>http://localhost:4000/posts/idol-record-2/</id>
     <content src="http://localhost:4000/posts/idol-record-2/" />
     <author>
-      <name>MsEspeon</name>
+      <name>Ittousei</name>
     </author>
 
   
@@ -178,7 +178,7 @@
     <id>http://localhost:4000/posts/idol-record-1/</id>
     <content src="http://localhost:4000/posts/idol-record-1/" />
     <author>
-      <name>MsEspeon</name>
+      <name>Ittousei</name>
     </author>
 
   

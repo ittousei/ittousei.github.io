@@ -1,7 +1,7 @@
 ---
 title: 通知书开箱
 description: 周日中午，EMS送来了心心念念的录取通知书，我的博士申请也正式告一段落
-author: MsEspeon
+author: Ittousei
 date: 2024-07-22 00:27:00 +0800
 categories: [日常]
 pin: false

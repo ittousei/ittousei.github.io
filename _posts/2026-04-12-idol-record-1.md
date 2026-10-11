@@ -1,7 +1,7 @@
 ---
-title: 偶活记录——CII《幻镜》
+title: 偶活记录：CII《幻镜》
 description: 
-author: MsEspeon
+author: Ittousei
 date: 2026-04-12 20:47:00 +0800
 categories: [日常]
 pin: false

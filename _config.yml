@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: 去以六月息 # the main title
 
-tagline: MsEspeon@随便写写 # it will display as the sub-title
+tagline: Ittousei@随便写写 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A personal blog for recording pieces of thoughts.
@@ -34,7 +34,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: MsEspeon
+  name: Ittousei
   email: missingespeon@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link

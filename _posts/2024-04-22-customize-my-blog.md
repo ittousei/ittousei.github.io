@@ -1,7 +1,7 @@
 ---
 title: Chirpy主题的进阶使用
 description: 一些基于Chirpy主题的个性化设置
-author: MsEspeon
+author: Ittousei
 date: 2024-04-22 16:45:00 +0800
 categories: [Tutorial, Jekyll]
 pin: false

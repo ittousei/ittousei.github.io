@@ -1,7 +1,7 @@
 ---
-title: 偶活记录——C《第一人称》&E《遗忘的国度》
+title: 偶活记录：C《第一人称》&E《遗忘的国度》
 description: 
-author: MsEspeon
+author: Ittousei
 date: 2026-04-20 00:10:00 +0800
 categories: [日常]
 pin: false

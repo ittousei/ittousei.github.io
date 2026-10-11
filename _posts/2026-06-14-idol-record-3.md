@@ -1,7 +1,7 @@
 ---
-title: 偶活记录——GII《手牵手》
+title: 偶活记录：GII《手牵手》
 description: 
-author: MsEspeon
+author: Ittousei
 date: 2026-06-14 12:17:00 +0800
 categories: [日常]
 pin: false
@@ -10,7 +10,7 @@ mermaid: true
 media_subpath: /assets/img/idol-record-3
 ---
 
-本篇的时间线承接[4月12日偶活记录](/posts/idol-record-1/)。
+本篇的时间线承接[五一小记](/posts/film-festival/)。
 
 ---
 

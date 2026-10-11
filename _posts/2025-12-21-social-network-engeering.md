@@ -1,7 +1,7 @@
 ---
 title: 社交网络漫游指南
 description: 一直想写一篇关于信息安全的东西，但写到什么程度比较难以把握
-author: MsEspeon
+author: Ittousei
 date: 2025-12-22 23:45:00 +0800
 categories: [意义不明]
 pin: false

@@ -1,7 +1,7 @@
 ---
 title: Jekyll博客搭建教程（上篇）
 description: 关于Jekyll环境的安装与使用
-author: MsEspeon
+author: Ittousei
 date: 2024-04-21 12:10:00 +0800
 categories: [Tutorial, Jekyll]
 pin: false

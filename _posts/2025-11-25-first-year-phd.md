@@ -1,7 +1,7 @@
 ---
 title: 第一年小结
 description: 趁此一周年之际，回顾一下什么实现了，什么又偏离了预期
-author: MsEspeon
+author: Ittousei
 date: 2025-11-25 23:52:00 +0800
 categories: [日常]
 pin: false

@@ -1,7 +1,7 @@
 ---
 title: 使用Cloudflare R2搭建个人图床
 description: 
-author: MsEspeon
+author: Ittousei
 date: 2026-05-23 22:10:00 +0800
 categories: [Tutorial, Cloudflare]
 pin: false

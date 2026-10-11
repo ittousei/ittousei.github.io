@@ -1,7 +1,7 @@
 ---
 title: Jekyll博客搭建教程（下篇）
 description: Chirpy主题的使用说明：使用Chirpy设置博客布局，在GitHub Page上部署博客
-author: MsEspeon
+author: Ittousei
 date: 2024-04-21 20:17:00 +0800
 categories: [Tutorial, Jekyll]
 pin: false
@@ -91,8 +91,8 @@ tabs:
 文章的作者信息存放在`_data/authors.yml`，可填写多个作者。
 
 ```yaml
-MsEspeon:
-  name: MsEspeon
+Ittousei:
+  name: Ittousei
   url: https://github.com/ittousei/
 ```
 
