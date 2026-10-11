@@ -1,6 +1,6 @@
 ---
 title: 夏日的回忆
-description: 
+description: 本科时一个平平无奇的夏日
 author: Ittousei
 date: 2026-05-27 21:57:00 +0800
 categories: [意义不明]

@@ -1,6 +1,6 @@
 ---
 title: 使用Cloudflare R2搭建个人图床
-description: 
+description: 图片资源批量化管理的一个解决方案
 author: Ittousei
 date: 2026-05-23 22:10:00 +0800
 categories: [Tutorial, Cloudflare]

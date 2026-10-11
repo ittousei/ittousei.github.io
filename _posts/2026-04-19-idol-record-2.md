@@ -1,6 +1,6 @@
 ---
 title: 偶活记录：C《第一人称》&E《遗忘的国度》
-description: 
+description: 周五肝了一天赶完课程报告，把周末的时间留出来搞偶活放纵一下
 author: Ittousei
 date: 2026-04-20 00:10:00 +0800
 categories: [日常]

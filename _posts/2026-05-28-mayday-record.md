@@ -1,6 +1,6 @@
 ---
 title: 五一小记
-description: 
+description: 五一期间排了两场偶活作为调剂
 author: Ittousei
 date: 2026-05-28 00:40:00 +0800
 categories: [日常]
