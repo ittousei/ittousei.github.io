@@ -26,14 +26,14 @@ media_subpath: /assets/img/yume-no-kawa
 
 由于晚上还要去姜杉生日会逮捕恬豆，因此没留下来参加一期生的特典会，不过我也没有特别想切的人，下次有空去异色星切桃沢楚楚吧。
 
-![](IMG_4166.JPG)
-![](IMG_4168.JPG)
-![](IMG_4171.JPG)
-![](IMG_4172.JPG)
-![](IMG_4173.JPG)
-![](IMG_4174.JPG)
-![](IMG_4178.JPG)
-![](IMG_4183.JPG)
+![](IMG_4166.jpg)
+![](IMG_4168.jpg)
+![](IMG_4171.jpg)
+![](IMG_4172.jpg)
+![](IMG_4173.jpg)
+![](IMG_4174.jpg)
+![](IMG_4178.jpg)
+![](IMG_4183.jpg)
 ![](SCR-20261011-dxrf.jpeg)
 ![](SCR-20261011-drok.jpeg)
 
