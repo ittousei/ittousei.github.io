@@ -3,7 +3,7 @@ title: 国庆小记（中）：特典会初体验
 description: 演出完毕便是特典会环节
 author: Ittousei
 date: 2026-10-05 14:20:00 +0800
-categories: [日常]
+categories: [偶像大学习]
 pin: false
 math: true
 mermaid: true

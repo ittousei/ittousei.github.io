@@ -3,15 +3,11 @@ title: 五一小记
 description: 五一期间排了两场偶活作为调剂
 author: Ittousei
 date: 2026-05-28 00:40:00 +0800
-categories: [日常]
+categories: [偶像大学习]
 pin: false
 math: true
 mermaid: true
 media_subpath: /assets/img/mayday-record
----
-
-本篇的时间线承接[4月19日偶活记录](/posts/idol-record-2/)。
-
 ---
 
 书接上回，继培养方案的最后一门课程结课，紧随而来的便是博资考，算是对PhD前两年学习的一个收尾。四月上旬结课，中间跑了两周快乐的偶活，然后就要在不快乐的五一复习备考了。

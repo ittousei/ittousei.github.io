@@ -3,7 +3,7 @@ title: 国庆小记（下）：AKBTSH一期生毕公
 description: 6号去浅水湾看了社会队一期生的毕业公演
 author: Ittousei
 date: 2026-10-05 14:21:00 +0800
-categories: [日常]
+categories: [偶像大学习]
 pin: false
 math: true
 mermaid: true
